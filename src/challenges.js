@@ -8,7 +8,7 @@ function compareTrue(animal1, animal2) {
     return true;
   } else {
     return false;
-    }
+  }
 }
 
 console.log(compareTrue(girafa, elefante));
@@ -26,17 +26,22 @@ console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(string) {
-let strings = string.split(' ');
-return strings;
+  let strings = string.split(' ');
+  return strings;
 }
-console.log(splitSentence("go trybe"));
-console.log(splitSentence("vamo que vamo"));
-console.log(splitSentence("foguete"));
+console.log(splitSentence('go trybe'));
+console.log(splitSentence('vamo que vamo'));
+console.log(splitSentence('foguete'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+// ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+
+function concatName(names) {
+  let firstName = names[0];
+  let lastName = names.pop();
+  return lastName + ", " + firstName;
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints() {
