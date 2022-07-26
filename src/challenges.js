@@ -8,7 +8,7 @@ function compareTrue(animal1, animal2) {
     return true;
   } else {
     return false;
-}
+    }
 }
 
 console.log(compareTrue(girafa, elefante));
@@ -16,14 +16,6 @@ console.log(compareTrue(girafa, macaco));
 console.log(compareTrue(elefante, macaco));
 
 // Desafio 2
-
-// base1 = 10;
-// height1 = 50;
-// base2 = 5;
-// height2 = 2;
-// base3 = 51;
-// height3 = 1;
-
 function calcArea(base, height) {
   let area = base * height / 2;
   return area;
@@ -32,11 +24,14 @@ console.log(calcArea(10, 50));
 console.log(calcArea(5, 2));
 console.log(calcArea(51, 1));
 
-
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+let strings = string.split(' ');
+return strings;
 }
+console.log(splitSentence("go trybe"));
+console.log(splitSentence("vamo que vamo"));
+console.log(splitSentence("foguete"));
 
 // Desafio 4
 function concatName() {
