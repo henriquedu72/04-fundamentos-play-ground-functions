@@ -16,9 +16,22 @@ console.log(compareTrue(girafa, macaco));
 console.log(compareTrue(elefante, macaco));
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+
+// base1 = 10;
+// height1 = 50;
+// base2 = 5;
+// height2 = 2;
+// base3 = 51;
+// height3 = 1;
+
+function calcArea(base, height) {
+  let area = base * height / 2;
+  return area;
 }
+console.log(calcArea(10, 50));
+console.log(calcArea(5, 2));
+console.log(calcArea(51, 1));
+
 
 // Desafio 3
 function splitSentence() {
