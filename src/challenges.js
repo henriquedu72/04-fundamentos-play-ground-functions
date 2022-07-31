@@ -39,21 +39,22 @@ console.log(splitSentence('foguete'));
 function concatName(names) {
   let firstName = names[0];
   let lastName = names.pop();
-  return lastName + ", " + firstName;
+  return lastName + [', '] + firstName;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
+let points = 0;
 function footballPoints(wins, ties) {
-  let vitoria = wins * 3;
-  let empate = ties * 1;
-  return vitoria + empate;
+points = (wins * 3) + ties;
+  return points
 }
-console.log(footballPoints(14, 8));
-console.log(footballPoints(1, 2));
-console.log(footballPoints(0, 0));
+// console.log(footballPoints(14, 8));
+// console.log(footballPoints(1, 2));
+// console.log(footballPoints(0, 0));
 
 // Desafio 6
+
 function highestCount() {
   // seu código aqui
 }
