@@ -117,7 +117,11 @@ function fizzBuzz(numbers) {
       result.push('bug!');
     }
   }  return result;
-}   
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
+
 
 
 // Desafio 9
