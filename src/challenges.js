@@ -46,8 +46,8 @@ console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // Desafio 5
 let points = 0;
 function footballPoints(wins, ties) {
-points = (wins * 3) + ties;
-  return points
+  points = (wins * 3) + ties;
+  return points;
 }
 console.log(footballPoints(14, 8));
 console.log(footballPoints(1, 2));
@@ -56,26 +56,37 @@ console.log(footballPoints(0, 0));
 // Desafio 6
 
 function highestCount(numbers) {
-  let bigNumber = numbers [0];
+  let bigNumber = numbers[0];
   for (let index = 1; index < numbers.length; index += 1) {
     if (bigNumber < numbers[index]) {
       bigNumber = numbers[index];
     }
   }
- let totalOfReptitions = 0;
- for (let index = 0; index < numbers.length; index += 1) {
-  if (bigNumber === numbers[index]) {
-    totalOfReptitions += 1;
+    let totalOfReptitions = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (bigNumber === numbers[index]) {
+      totalOfReptitions += 1;
+    }
   }
- }
- return totalOfReptitions;
+  return totalOfReptitions;
 }
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distCat1 = Math.abs(mouse - cat1);
+  let distCat2 = Math.abs(mouse - cat2);
+  if (distCat1 > distCat2) {
+    return "cat2";
+  } else if (distCat1 < distCat2) {
+    return "cat1";
+  } else {
+    return "os gatos trombam e o rato foge";
+  }
 }
+console.log(catAndMouse(1, 3, 2));
+console.log(catAndMouse(1, 6, 12));
+console.log(catAndMouse(1, 1, 1));
 
 // Desafio 8
 function fizzBuzz() {
