@@ -62,7 +62,7 @@ function highestCount(numbers) {
       bigNumber = numbers[index];
     }
   }
-    let totalOfReptitions = 0;
+  let totalOfReptitions = 0;
   for (let index = 0; index < numbers.length; index += 1) {
     if (bigNumber === numbers[index]) {
       totalOfReptitions += 1;
@@ -77,11 +77,11 @@ function catAndMouse(mouse, cat1, cat2) {
   let distCat1 = Math.abs(mouse - cat1);
   let distCat2 = Math.abs(mouse - cat2);
   if (distCat1 > distCat2) {
-    return "cat2";
+    return 'cat2';
   } else if (distCat1 < distCat2) {
-    return "cat1";
+    return 'cat1';
   } else {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   }
 }
 console.log(catAndMouse(1, 3, 2));
@@ -89,21 +89,6 @@ console.log(catAndMouse(1, 6, 12));
 console.log(catAndMouse(1, 1, 1));
 
 // Desafio 8
-// function fizzBuzz(numbers) {
-//   let result = [];
-// for(let index in numbers) {
-//   if (numbers[index] % 3 ===0) {
-//     result.push('fizz');
-//   } else if (numbers[index] % 5 === 0) {
-//     result.push('buzz');
-//   } else if (numbers[index] % 3 && numbers[index] % 5 === 0) {
-//     result.push('FizzBuzz');
-//   } else {
-//     result.push("bug");
-//     }
-// }
-// }
-// console.log(fizzBuzz([2, 15, 7, 9, 45]));
 function fizzBuzz(numbers) {
   const result = [];
   for (let index in numbers) {
@@ -134,7 +119,7 @@ function decode() {
 
 // Desafio 10
 function techList() {
-  // seu código aqui
+// seu código aqui
 }
 
 module.exports = {
