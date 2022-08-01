@@ -89,9 +89,36 @@ console.log(catAndMouse(1, 6, 12));
 console.log(catAndMouse(1, 1, 1));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+// function fizzBuzz(numbers) {
+//   let result = [];
+// for(let index in numbers) {
+//   if (numbers[index] % 3 ===0) {
+//     result.push('fizz');
+//   } else if (numbers[index] % 5 === 0) {
+//     result.push('buzz');
+//   } else if (numbers[index] % 3 && numbers[index] % 5 === 0) {
+//     result.push('FizzBuzz');
+//   } else {
+//     result.push("bug");
+//     }
+// }
+// }
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
+function fizzBuzz(numbers) {
+  const result = [];
+  for (let index in numbers) {
+    if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
+      result.push('fizzBuzz');
+    } else if (numbers[index] % 3 === 0) {
+      result.push('fizz');
+    } else if (numbers[index] % 5 === 0) {
+      result.push('buzz');
+    } else {
+      result.push('bug!');
+    }
+  }  return result;
+}   
+
 
 // Desafio 9
 function encode() {
